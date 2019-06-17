@@ -10,5 +10,6 @@ RUN wget https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.
     make check &&\
     make install &&\
     ldconfig &&\
-    protoc --version 
+    protoc --version &&\
+    cd .. && rm protobuf-2.6.1.tar.gz && rm -r protobuf-2.6.1
 
